@@ -1,3 +1,6 @@
+This is a Responsive COVID-19 Tracking website built with React JS and Material UI and it can be viewed here:
+https://covid19bybikashro.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
