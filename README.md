@@ -5,6 +5,32 @@ This functioning related Android app is also built by me: https://github.com/Bik
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+**API USED** : https://covid19.mathdro.id/api
+
+**API Sample:**
+{"confirmed":{"value":211921924,"detail":"https://covid19.mathdro.id/api/confirmed"},"recovered":{"value":0,"detail":"https://covid19.mathdro.id/api/recovered"},"deaths":{"value":4433557,"detail":"https://covid19.mathdro.id/api/deaths"},"dailySummary":"https://covid19.mathdro.id/api/daily","dailyTimeSeries":{"pattern":"https://covid19.mathdro.id/api/daily/[dateString]","example":"https://covid19.mathdro.id/api/daily/2-14-2020"},"image":"https://covid19.mathdro.id/api/og","source":"https://github.com/mathdroid/covid19","countries":"https://covid19.mathdro.id/api/countries","countryDetail":{"pattern":"https://covid19.mathdro.id/api/countries/[country]","example":"https://covid19.mathdro.id/api/countries/USA"},"lastUpdate":"2021-08-23T10:21:22.000Z"}
+
+DEPENDENCIES TO ADD BEFORE STARTING APP:
+1) npm install --save axios   //for making API requests from the API
+2) npm install --save react-chartjs-2   //for making charts
+3) npm install --save react-countup    // for the increasing numbers animation
+4) 
+**PROCESS TO CREATE THIS APPLICATION:**
+
+1) Open Visual Studio
+2) type npx create-react-app in the CLI.
+3) Add Necessary Dependencies.
+4) Create a src folder (delete if any) and create Index.js, App.js and App.module.css file.
+5) In index.js, apply ReactDOM and call the App.js with the id as root.
+6) Then, create folders Cards, CountryPicker, Charts in the src/components folder.
+7) Create separate JSX and Module Css files for the 3 components.  (eg. Cards.module.css  i.e module is used so that the css is applied for that component only and not other).
+8) Write basic JS code for all JS components and import them in the App file.
+9) To import all the components is the App, just create another index.js file in components folder and export all the components in that file, and you can use the components now in any JS file, by writing only one line of code.
+10) Add necessary code in App css file and apply it in your App.js file to style your components.
+11) Now create a new folder API in the src and create a index.js file in that folder.
+12) fetch data from the api. using "" constant response = await axios.get(url);  return response; ""
+13) 
+
 ## Available Scripts
 
 In the project directory, you can run:
