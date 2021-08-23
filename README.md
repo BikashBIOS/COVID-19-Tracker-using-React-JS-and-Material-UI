@@ -10,26 +10,35 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 **API Sample:**
 {"confirmed":{"value":211921924,"detail":"https://covid19.mathdro.id/api/confirmed"},"recovered":{"value":0,"detail":"https://covid19.mathdro.id/api/recovered"},"deaths":{"value":4433557,"detail":"https://covid19.mathdro.id/api/deaths"},"dailySummary":"https://covid19.mathdro.id/api/daily","dailyTimeSeries":{"pattern":"https://covid19.mathdro.id/api/daily/[dateString]","example":"https://covid19.mathdro.id/api/daily/2-14-2020"},"image":"https://covid19.mathdro.id/api/og","source":"https://github.com/mathdroid/covid19","countries":"https://covid19.mathdro.id/api/countries","countryDetail":{"pattern":"https://covid19.mathdro.id/api/countries/[country]","example":"https://covid19.mathdro.id/api/countries/USA"},"lastUpdate":"2021-08-23T10:21:22.000Z"}
 
-DEPENDENCIES TO ADD BEFORE STARTING APP:
+**DEPENDENCIES TO ADD BEFORE STARTING APP:**
+
 1) npm install --save axios   //for making API requests from the API
 2) npm install --save react-chartjs-2   //for making charts
 3) npm install --save react-countup    // for the increasing numbers animation
-4) 
+4) npm install --save @material-ui/core   //for using material UI in the application
+5) npm install --save chart.js    //for using chart
+6) 
+
+
 **PROCESS TO CREATE THIS APPLICATION:**
 
 1) Open Visual Studio
 2) type npx create-react-app in the CLI.
 3) Add Necessary Dependencies.
-4) Create a src folder (delete if any) and create Index.js, App.js and App.module.css file.
-5) In index.js, apply ReactDOM and call the App.js with the id as root.
-6) Then, create folders Cards, CountryPicker, Charts in the src/components folder.
-7) Create separate JSX and Module Css files for the 3 components.  (eg. Cards.module.css  i.e module is used so that the css is applied for that component only and not other).
-8) Write basic JS code for all JS components and import them in the App file.
-9) To import all the components is the App, just create another index.js file in components folder and export all the components in that file, and you can use the components now in any JS file, by writing only one line of code.
-10) Add necessary code in App css file and apply it in your App.js file to style your components.
-11) Now create a new folder API in the src and create a index.js file in that folder.
-12) fetch data from the api. using "" constant response = await axios.get(url);  return response; ""
-13) 
+4) To run the app, type npm start.
+5) Create a src folder (delete if any) and create Index.js, App.js and App.module.css file.
+6) In index.js, apply ReactDOM and call the App.js with the id as root.
+7) Then, create folders Cards, CountryPicker, Charts in the src/components folder.
+8) Create separate JSX and Module Css files for the 3 components.  (eg. Cards.module.css  i.e module is used so that the css is applied for that component only and not other).
+9) Write basic JS code for all JS components and import them in the App file.
+10) To import all the components is the App, just create another index.js file in components folder and export all the components in that file, and you can use the components now in any JS file, by writing only one line of code.
+11) Add necessary code in App css file and apply it in your App.js file to style your components.
+12) Now create a new folder API in the src and create a index.js file in that folder.
+13) fetch data from the api. using "" constant {data: [variables of api] } = await axios.get(url); return {variables of api}; ""
+14) Inn App.js, retrieve the data and fetch data in componentDidMount() and put the data in the props in the components js files.
+15) Material UI used for Card - Card, CardCotent, Typography and Grid.
+16) Use CountUp tag for number increasing animation.
+17) Use Line Chart in Chart Component to make a graph functionality
 
 ## Available Scripts
 
