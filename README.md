@@ -17,8 +17,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3) npm install --save react-countup    // for the increasing numbers animation
 4) npm install --save @material-ui/core   //for using material UI in the application
 5) npm install --save chart.js    //for using chart
-6) 
-
 
 **PROCESS TO CREATE THIS APPLICATION:**
 
@@ -35,10 +33,31 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 11) Add necessary code in App css file and apply it in your App.js file to style your components.
 12) Now create a new folder API in the src and create a index.js file in that folder.
 13) fetch data from the api. using "" constant {data: [variables of api] } = await axios.get(url); return {variables of api}; ""
-14) Inn App.js, retrieve the data and fetch data in componentDidMount() and put the data in the props in the components js files.
+14) In App.js, retrieve the data and fetch data in componentDidMount() and put the data in the props in the components js files.
 15) Material UI used for Card - Card, CardCotent, Typography and Grid.
 16) Use CountUp tag for number increasing animation.
-17) Use Line Chart in Chart Component to make a graph functionality
+17) Use Line Chart in Chart Component to make a graph functionality for Infected and Deaths graphs.
+18) Use NativeSelect in the CountryPicker.js to create an array of all countries.
+19) Pass the Charts, Cards and CountryPicker into App.js.
+20) Apply Bar chart in the Charts file and adjust it in the App.js to display the Bar chart for all the Countries Data.
+21) Apply Form Control in the required JS files so that it gets adjusted in the Mobile view also.
+
+**Overview:**
+1) App contains data and country.
+2) async componentDidMount has fetchData.
+3) FetchData is a function in api/index.js to get all the attributes in the api which we only require.
+4) Now setting it in the app.js using setState().
+5) Handling country change in the app.js, requires the function in CountryPicker.
+6) Fetching an array of countries from the api and looping it the FormControl and NativeSelect Material ui components to fetch all the countries.
+7) Then applying that function in the App.js by setState.
+8) In chart.js, fetchDailyData() is a separate function to create a line chart for the daily data only.
+9) To print the countries data, bar chart is used. If global is chose, then it is a line chart and if a particular country is chose, then a bar chart is displayed.
+10) In Cards.js, data is coming from index by props which is put in the codes to create a card with increasing animation of the data.
+11) Finally, in Index.js of Api, it contains all the functions for separate values of api to be used in all the JS files.
+
+**NOTE - This App was made by Me in my 2nd Year of B.Tech**
+
+Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.
 
 ## Available Scripts
 
